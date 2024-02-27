@@ -1,4 +1,53 @@
 /* Fazer configuração padrão */
-
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+.initialText, .jumbotron{
+    margin: 1.5rem;
+}
+/* #mainPhoto{
+    padding: 0.5rem;
+    width: 50rem;
+    height: 30rem;
+    object-fit: cover;
+} */
+.icones{
+    display: flex;
+    margin: 1rem;
+    gap: 5rem;
+    align-items: space-around;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    font-size: smaller;
+    font-weight: bold   ;
+}
+.buttons button{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.buttons img{
+    width: 5rem;
+    height: 5rem;
+}
 
