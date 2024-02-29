@@ -46,8 +46,12 @@ body{
     outline: none;
     cursor: pointer;
 }
-.buttons img{
-    width: 5rem;
-    height: 5rem;
+.icones{
+    max-width: 78%;
+}
+.secondCol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
