@@ -10,7 +10,7 @@ module.exports = {
       database: 'vida_saudavel'
     },
     migrations: {
-      directory: path.resolve(__dirname, 'src', 'datavase', 'knex', 'migrations')
+      directory: path.resolve(__dirname, 'src', 'database', 'knex', 'migrations')
     },
     useNullAsDefault: true
   },
