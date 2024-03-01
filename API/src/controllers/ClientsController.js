@@ -1,4 +1,4 @@
-const knex = require('knex');
+const knex = require('../database/knex');
 
 class ClientsController {
     async createContacts(req, res){
@@ -15,6 +15,6 @@ class ClientsController {
         const contacts = await knex('clients');
         return res.status(200).json(contacts)
     }
-}
 
+}
 module.exports =  ClientsController;
