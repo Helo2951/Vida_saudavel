@@ -1,4 +1,5 @@
 const migrationRun = require('./src/database/mysql/migrations')
+require('dotenv').config()
 const express = require('express');
 const cors = require('cors');
 const routes = require('./src/routes')
@@ -12,9 +13,9 @@ app.use(routes);
 
 migrationRun();
 
-const port = 3333;
+const SERVER_PORT = process.env.PORT || 3000
 
-app.listen(port, () => {
+app.listen(SERVER_PORT, () => {
     console.log(`Server is running at ${port}`)
 });
 

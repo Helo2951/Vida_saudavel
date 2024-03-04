@@ -11,7 +11,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
 }
@@ -23,6 +23,8 @@ body{
     margin: 1rem;
     gap: 5rem;
     align-items: space-around;
+    max-width: 82%;
+
 }
 .buttons{
     display: flex;
@@ -39,9 +41,6 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
-}
-.icones{
-    max-width: 78%;
 }
 .secondCol{
     display: flex;
@@ -65,4 +64,18 @@ body{
 .modal-body .evento{
     border-top: 1px solid lightgrey ;
 }
-
+.partners{
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+.partners-content {
+    display: flex;
+}
+.partners-content img {
+    width: 9rem;
+    height: 9rem;
+}
+.partners-text {
+    margin: 0 3rem;
+}

@@ -5,12 +5,15 @@ class UsersController {
     async createUser(req, res){
         const {name, email, password} = req.body;
 
+        const isAdmin = false
+
         const hashedPassword = await bcrypt.hash(password, 8)
 
         await knex('users').insert({
             name,
             email,
-            password: hashedPassword
+            password: hashedPassword,
+            isAdmin
         })
         return res.status(201).json('Usuário criado')
     }
